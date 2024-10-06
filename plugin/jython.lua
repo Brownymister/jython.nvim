@@ -1,1 +1,1 @@
-vim.api.nvim_create_command('Jython', require("jython").hello, {})
+vim.api.nvim_create_user_command('Jython', require("jython").hello, {})
