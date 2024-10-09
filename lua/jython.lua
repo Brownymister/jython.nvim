@@ -21,6 +21,8 @@ M.setup = function(args)
     M.config = vim.tbl_deep_extend("force", M.config, args or {})
 end
 
+M.help = function() module.help() end
+
 M.run_file = function() module.run_file(M.config.jython_path, M.config.split_interpreter) end
 
 return M

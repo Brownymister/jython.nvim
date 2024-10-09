@@ -2,6 +2,13 @@
 local M = {}
 
 ---@return string
+--- not implemented yet
+m.help = function()
+    return
+        "Jython (help)\nJython run\nJython watch\nJython run_save_to_file (file_path)"
+end
+
+---@return string
 M.get_path_from_buffer = function() return vim.api.nvim_buf_get_name(0) end
 
 ---@return boolean

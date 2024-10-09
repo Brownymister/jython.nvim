@@ -1,6 +1,5 @@
-vim.api.nvim_create_user_command('Jython', require("jython").hello, {})
+vim.api.nvim_create_user_command('Jython', require("jython").help, {})
 vim.api.nvim_create_user_command('JR', require("jython").run_file, {})
-
 
 -- Jython (help)
 -- Jython run
