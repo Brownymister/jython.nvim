@@ -4,7 +4,6 @@ local module = require("jython.module")
 ---@class Config
 ---@field opt string Your config option
 local config = {
-    opt = "Hello!",
     jython_path = "~/dev/jython/jython.jar",
     split_interpreter = false
 }
@@ -21,8 +20,6 @@ M.config = config
 M.setup = function(args)
     M.config = vim.tbl_deep_extend("force", M.config, args or {})
 end
-
-M.hello = function() print(module.my_first_function(M.config.opt)) end
 
 M.run_file = function() module.run_file(M.config.jython_path, M.config.split_interpreter) end
 
