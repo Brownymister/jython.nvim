@@ -19,6 +19,13 @@ require('jython').config = {
 }
 ```
 
+# Usage
+
+| Command | Description |
+| :Jython | Show help msg |
+| :JR | Run the current file in a terminal window inside a new vim tab |
+| :JRSplit | Run the current file in a terminal inside a split window |
+
 # TODO
 
 - [x] running jython interpreter (byo)
