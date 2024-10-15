@@ -14,6 +14,7 @@ Setup:
 
 ```lua
 require('jython').config = {
+    jar = true --- only if you use the jar file; if set to false it 'jyothn_path' will be handled as an executable
     jython_path = "/usr/bin/jython",
 }
 ```
